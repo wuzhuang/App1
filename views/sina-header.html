@@ -1,0 +1,89 @@
+<header id="header" ng-show="footer=='首页'">
+  <div class="header-top">
+    <div class="header-logo"></div>
+    <div class="header-icon">
+      <span class="icon iconfont icon-weibiaoti4"></span>
+      <span class="icon iconfont icon-zuojiantou"></span>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="nav-wrap">
+      <nav class="nav">
+        <ul class="nav-lists">
+          <li class="nav-item active" ng-class="{active:title=='头条'}" ng-click="title='头条'" ng-init="title='头条'">
+            <a href="#/index" class="nav-link">头条</a>
+            <div class="line"></div>
+          </li>
+          <li class="nav-item" ng-class="{active:title=='推荐'}" ng-click="title='推荐'">
+            <a href="#/tuijian" class="nav-link">推荐</a>
+            <div class="line"></div>
+          </li>
+          <li class="nav-item" ng-class="{active:title=='视频'}" ng-click="title='视频'">
+            <a href="#/shipin" class="nav-link">视频</a>
+            <div class="line"></div>
+          </li>
+          <li class="nav-item" ng-class="{active:title=='娱乐'}" ng-click="title='娱乐'">
+            <a href="" class="nav-link">娱乐</a>
+            <div class="line"></div>
+          </li>
+          <li class="nav-item" ng-class="{active:title=='体育'}" ng-click="title='体育'">
+            <a href="" class="nav-link">体育</a>
+            <div class="line"></div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="shu"></div>
+    <div class="xiala">
+      <span class="xiala iconfont icon-jiazaigengduo" ng-click="show=!show" ng-init="show=false" ng-class="{active:show}"></span>
+    </div>
+  </div>
+
+
+
+  <div id="type-wrap" ng-show="show">
+    <div class="type-inner">
+      <section>
+        <p>
+          <span class="type-title">频道切换</span>
+          <span class="type-desc">长按删除或排序</span>
+        </p>
+        <ul class="type-lists">
+          <li class="type-item"><a href="" class="">头条</a></li>
+          <li class="type-item"><a href="" class="">视频</a></li>
+          <li class="type-item"><a href="" class="">娱乐</a></li>
+          <li class="type-item"><a href="" class="">体育</a></li>
+          <li class="type-item"><a href="" class="">财经</a></li>
+          <li class="type-item"><a href="" class="">高考</a></li>
+          <li class="type-item"><a href="" class="">科技</a></li>
+          <li class="type-item"><a href="" class="">汽车</a></li>
+          <li class="type-item"><a href="" class="">汽车</a></li>
+          <li class="type-item"><a href="" class="">山西</a></li>
+          <li class="type-item"><a href="" class="">图片</a></li>
+          <li class="type-item"><a href="" class="">军事</a></li>
+          <li class="type-item"><a href="" class="">社会</a></li>
+          <li class="type-item"><a href="" class="">搞笑</a></li>
+          <li class="type-item"><a href="" class="">NBA</a></li>
+          <li class="type-item"><a href="" class="">八卦</a></li>
+          <li class="type-item"><a href="" class="">时尚</a></li>
+          <li class="type-item"><a href="" class="">女性</a></li>
+        </ul>
+      </section>
+      <section>
+        <p>
+          <span class="type-title">添加频道</span>
+          <span class="type-desc">点击即可快速添加</span>
+        </p>
+        <ul class="type-lists">
+          <li class="type-item"><a href="" class="">头条</a></li>
+          <li class="type-item"><a href="" class="">视频</a></li>
+          <li class="type-item"><a href="" class="">娱乐</a></li>
+          <li class="type-item"><a href="" class="">体育</a></li>
+          <li class="type-item"><a href="" class="">财经</a></li>
+          <li class="type-item"><a href="" class="">高考</a></li>
+          <li class="type-item"><a href="" class="">科技</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</header>

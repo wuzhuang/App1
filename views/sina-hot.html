@@ -1,0 +1,23 @@
+<div id="hot-page">
+  <div class="hot-wrap">
+    <div class="remen">
+      <span>热门</span>
+    </div>
+    <ul class="hot-lists">
+      <li class="hot-item" ng-repeat="v in hotnews" ng-class="{one:$first}" >
+        <a href="">
+          <div class="hot-pic">
+            <img src="{{v.img}}" alt="">
+            <p class="top-count">
+              <span class="count">01</span>
+            </p>
+          </div>
+          <div class="hot-info">
+            <span class="hot-title">{{v.title}}</span>
+            <span class="hot-desc">{{v.desc}}</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
